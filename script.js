@@ -5,11 +5,23 @@ var divIds = [];
 var matches = 0;
 
 function fillBoard() {
-  //TODO: randomly assign positions to the tiles on the screen call
-  // addTileToBoard here
-  // Hint: You can use a forEach or a for loop
-
+  var tiles = ["cat", "dog","chicken"];
+  var double = [];
+  for(var i=0;i<tiles.length;i++) {
+    double.push(tiles[i]);
+    double.push(tiles[i]);
+    
+  }
+  addTileToBoard("clown");
+  addTileToBoard("cat");
+  for(var i=0;i<tiles.length;i++)
+    addTileToBoard("parrot")
+    addTileToBoard("dog");
+  for(var i=0;i<tiles.length;i++){
+  }
+  
 };
+
 
 function shuffle(array) {
   //TODO: use this method to shuffle the array
